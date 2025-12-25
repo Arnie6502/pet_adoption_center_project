@@ -117,7 +117,7 @@ class TestPetAdoptionWithFixtures(unittest.TestCase):
         # Track original list length for verification
         self.original_list_length = len(self.adoption_list)
         
-        print(f"✅ Setup complete: {len(self.adoption_list)} pets in adoption list")
+        print(f"[OK] Setup complete: {len(self.adoption_list)} pets in adoption list")
     
     def tearDown(self):
         """Test Case 2: Use tearDown() to clean up after each test by resetting the pet list."""
@@ -132,7 +132,7 @@ class TestPetAdoptionWithFixtures(unittest.TestCase):
         # Reset any other test variables
         self.original_list_length = 0
         
-        print("✅ Teardown complete: adoption list reset")
+        print("[OK] Teardown complete: adoption list reset")
     
     def test_adoption_list_initialized_correctly(self):
         """Test that setUp() properly initializes the adoption list."""
